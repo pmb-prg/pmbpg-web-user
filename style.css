@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --background-color: black;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin-top: 5px;
+    width: 95vw;
+    height: 50px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.207), rgba(255, 255, 255, 0.064));
+    border: 1px solid white;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+
+#logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color);
+    border-radius: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#logo:hover {
+    color: black;
+    background-color: white;
+}
+
+#direction {
+    display: none;
+}
+
+.ham-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ham-menu .menu-line {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media(min-width:700px) {
+    .ham-menu {
+        display: none;
+    }
+    #direction {
+        width: 400px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #direction li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 22px;
+    }
+    #direction a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #direction li span {
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    #direction a:hover+span {
+        width: 100%;
+        height: 2px;
+        border-radius: 1px;
+    }
+}
