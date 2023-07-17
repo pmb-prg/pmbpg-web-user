@@ -10,15 +10,30 @@
 </head>
 
 <body>
+    <!-----------------top menu---------------->
+    <div class="top-menu">
+        <img src="img/close.svg" alt="" id="close">
+        <ul>
+            <li> <a href="#skill">Skills</a>
+            </li>
+            <li>
+                <a href="#">Language</a>
+            </li>
+            <li>
+                <a href="#">social network</a>
+            </li>
+        </ul>
+    </div>
+    <!----------------Header---------------------->
     <header>
         <a href="#" id="logo">P</a>
         <div class="ham-menu">
-            <span class="one menu-line"></span>
-            <span class="tow menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
         </div>
 
         <ul id="direction">
-            <li> <a href="#">Skills</a>
+            <li> <a href="#skill">Skills</a>
                 <span class="under-line"></span>
             </li>
             <li>
@@ -32,7 +47,56 @@
         </ul>
 
     </header>
-
+    <!---------------------main------------------------->
+    <main>
+        <section class="one">
+            <div class="text-one">
+                <h1>Hy! I Am</h1>
+                <p class="myname">Pourya Moradi Biameh</p>
+                <p class="lorem1">Im Front-End Developer Click The More To Learn More About Me</p>
+                <a href="#">More..</a>
+            </div>
+            <div class="img-me">
+                <img src="/img/me.png" alt="me">
+            </div>
+        </section>
+        <section id="skill">
+            <p class="skill-header">My Skills Include:</p>
+            <div class="skill-name">
+                <div class="cards html">
+                    <div class="incard">
+                        <h2>HTML</h2>
+                        <p>The HyperText Markup Language </p>
+                    </div>
+                </div>
+                <div class="cards css">
+                    <div class="incard">
+                        <h2>CSS</h2>
+                        <p>Cascading Style Sheets</p>
+                    </div>
+                </div>
+                <div class="cards js">
+                    <div class="incard">
+                        <h2>JavaScript</h2>
+                        <p>programming language for dynamic web</p>
+                    </div>
+                </div>
+                <div class="cards git">
+                    <div class="incard">
+                        <h2>Git</h2>
+                        <p>Git is a version control software.</p>
+                    </div>
+                </div>
+                <div class="cards react">
+                    <div class="incard">
+                        <h2>React</h2>
+                        <p>open source JavaScript library</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="javascript/menu.js"></script>
 </body>
 
 </html>
