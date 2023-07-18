@@ -243,6 +243,77 @@ main {
     color: #004fc7;
 }
 
+#language {
+    color: #fff;
+    width: 100vw;
+    background-color: #0099ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 15px 15px 10px;
+}
+
+.language-head {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.lorem {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.language-text a {
+    width: 100%;
+    text-align: center;
+}
+
+.language-text img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.577);
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: auto;
+    box-shadow: 0 0 10px black;
+}
+
+.circle p {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(142, 255, 61), #007100);
+}
+
+@keyframes darsad {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 60%;
+    }
+}
+
 
 /**------------------responsive-----------------------------------*/
 
@@ -317,6 +388,47 @@ main {
     }
     .incard:hover {
         transform: rotate(20deg);
+    }
+    #language {
+        width: 90vw;
+        height: 80vh;
+        flex-direction: row;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .language-text {
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-around;
+    }
+    .language-text img {
+        width: 100%;
+        transition: all 0.4s ease-in-out;
+    }
+    .language-text img:hover {
+        transform: scale(1.1);
+    }
+    .percent {
+        margin-right: 20px;
+    }
+}
+
+@media(min-width:850px) {
+    #language {
+        height: 90vh;
+    }
+    .language-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .language-text img {
+        width: 50%;
+    }
+    .percent {
+        margin-right: 50px;
     }
 }
 
