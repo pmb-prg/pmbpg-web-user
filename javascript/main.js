@@ -14,10 +14,12 @@ window.addEventListener("scroll", () => {
     const percent = document.querySelector("#percent");
     const water = document.querySelector(".water");
 
-    water.style.animation = "darsad 4s forwards";
 
+    water.style.animation = "none";
+    percent.innerText = "0";
     let per = percent.innerText;
     const interval = setInterval(function() {
+        water.style.animation = "darsad 4s forwards";
         per++;
         percent.innerText = per;
         if (per === 60) {
